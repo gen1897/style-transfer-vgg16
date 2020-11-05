@@ -3,13 +3,13 @@ Tried to implement [Gatys & Others](https://www.cv-foundation.org/openaccess/con
 The paper uses VGG16 net.
 
 # Files
-## train.py
+## src/train.py
 Executes de style transfer process.
-## model.py
+## src/model.py
 Loads VGG16 net, freezes parameters and changes max pools with average pools.
-## utils.py
+## src/utils.py
 Helpers such as image loader and other required/useful functions.
-## config.py
+## src/config.py
 Parameters used in the style transfer process. Most important to be known:
 - STYLE_WEIGHTS: Weights of each content layer.
 - CONTENT_WEIGHT: Don't touch! Importance of content in the final image.
